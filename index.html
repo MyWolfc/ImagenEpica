@@ -6,9 +6,12 @@
     <title>Document</title>
         <script>
         // Función para recargar la página cada 15 minutos (900000 milisegundos)
-        setTimeout(function() {
+        setInterval(()=>{
+            window.scrollBy(0, 1);
+            window.scrollBy(0, -1);
             window.location.reload();
-        }, 900000);
+        }, 6 * 60 * 1000)
+
     </script>
 </head>
 <body style="margin: 0px; height: 100%; background-color: rgb(14, 14, 14);">
